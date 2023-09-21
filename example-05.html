@@ -11,7 +11,7 @@
 	<div id="box"></div>
 	
 	<script>
-		// get a reference to the element with id box. 
+		// Get a reference to the element with id box. 
 		// You'll use this in the example below.
 		const box = document.querySelector('#box')
 
@@ -22,6 +22,7 @@
 		/* 
 		function calculateArea(length, width) {
 			const area = length * width
+      return area
 		} 
 		*/
 
@@ -59,6 +60,8 @@
 
 		calculateArea(12, 13) // nothing happens
 		// The function is called but the value returned is not used. 
+    // This isn't displaying anything in the console or doing 
+    // anything else. 12 * 13 is 156 you aren't seeing that in the console. 
 
 		const sqft = calculateArea(6, 7) // The return value is assigned to sqft
 		box.innerHTML = `Square Ft: ${sqft}` // Display sqft
@@ -71,7 +74,7 @@
 		// First we call the function work through the code there. 
 		// When the function reaches the return statement 
 
-		// This also works: (it will overwrite the result above)
+		// This also works:
 
 		// box.innerHTML = `Square Ft: ${calculateArea(9, 5)}`
 
